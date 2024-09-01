@@ -12,11 +12,11 @@ export function VideoSection() {
             <source src="/videos/video_home.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="flex flex-col items-start justify-center mt-5 ml-8">
-          <h2 className="font-extrabold md:font-bold mb-3 md:mb-5">
+        <div className="flex flex-col items-start justify-center mt-5 md:ml-8">
+          <h2 className="text-xl md:text-2xl font-extrabold md:font-bold mb-3 md:mb-5">
             CONOCE NUESTRA ATENCIÓN CORPORATIVA
           </h2>
-          <p className="text-sm md:text-lg text-justify font-light">
+          <p className="text-sm md:text-base text-justify font-normal">
             En Automotores Inka, somos el mejor aliado para tu negocio, con mas
             de 14 años de experiencia en el rubro automotriz, nos hace una
             empresa de confianza para cumplir tu sueño del auto propio.

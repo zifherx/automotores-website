@@ -28,6 +28,7 @@ const config = {
         redDarkInka: "#C01C1D",
         grisInka: "#A7A7A7",
         grisDarkInka: "#555555",
+        plomoInka: "#F6F6F6",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

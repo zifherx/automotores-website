@@ -60,5 +60,15 @@ export const vehicles_offers = [
     marca: "Hyundai",
     modelo: "New Palisade",
     precio: 47490,
+    isOffer: true,
+  },
+  {
+    id: 8,
+    image_url: "tiggo8pro-gris.png",
+    carroceria: "SUV",
+    marca: "Chery",
+    modelo: "Tiggo 8 Pro",
+    precio: 24990,
+    isOffer: true,
   },
 ];

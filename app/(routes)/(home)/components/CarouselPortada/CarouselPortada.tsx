@@ -17,7 +17,7 @@ import { images_banner } from "./Carousel.data";
 export function CarouselPortada() {
   return (
     <div className="w-full h-auto">
-      <Carousel opts={{ loop: true }} plugins={[Autoplay({ delay: 2000 })]}>
+      <Carousel opts={{ loop: true }} plugins={[Autoplay({ delay: 4000 })]}>
         <CarouselContent>
           {images_banner.map(({ id, alt, src }) => (
             <CarouselItem key={id}>

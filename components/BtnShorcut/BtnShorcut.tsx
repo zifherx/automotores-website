@@ -10,7 +10,7 @@ export function BtnShorcut(props: iBtnShorcut) {
   const { icon: Icon, tooltip } = props;
   return tooltip == null ? (
     <Icon
-      className="w-6 h-6 fill-white cursor-pointer"
+      className="w-7 h-7 fill-white cursor-pointer"
       color="white"
       strokeWidth={2}
     />

@@ -19,11 +19,11 @@ import { images_brands } from "./CarouselMarcas.data";
 
 export function CarouselMarcas() {
   return (
-    <div className="max-w-4xl px-14 pt-10 lg:max-w-6xl mx-auto md:px-0 md:py-10 items-center">
+    <div className="max-w-4xl px-14 lg:max-w-6xl mx-auto py-4 md:px-0 md:py-14 items-center">
       <TitleSection title="Elige alguna de nuestras marcas" />
       <SubtitleSection />
       <Carousel
-        className="py-10"
+        className="mt-10"
         opts={{ loop: true }}
         plugins={[Autoplay({ delay: 3000 })]}
       >
@@ -31,7 +31,7 @@ export function CarouselMarcas() {
           {images_brands.map(({ id, alt, src }) => (
             <CarouselItem key={id} className="basis-4/12 md:basis-32">
               <Image
-                className="object-contain border border-grisInka rounded-lg hover:border-black"
+                className="object-contain border border-grisInka rounded-lg hover:border-black drop-shadow-sm"
                 src={`/images/brands/${src}`}
                 alt={alt}
                 width={120}

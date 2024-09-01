@@ -14,6 +14,7 @@ import { vehicles_offers } from "./CarouselCards.data";
 
 export function CarouselCards() {
   const just_offer = vehicles_offers.filter((item) => item.isOffer);
+
   return (
     <Carousel
       className="py-10"

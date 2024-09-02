@@ -8,6 +8,9 @@ import "./globals.css";
 
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { BtnWhatsapp } from "@/components/BtnWhatsapp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +45,10 @@ export default function RootLayout({
             speed={200}
             shadow="0 0 10px #FAFAFA,0 0 5px #FAFAFA"
           />
+          <Navbar />
           {children}
+          <BtnWhatsapp />
+          <Footer />
           <Toaster />
         </ThemeProvider>
       </body>

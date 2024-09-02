@@ -78,7 +78,7 @@ export function MenuDesktop() {
             Posventa
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[800px]">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {headerMenu_1.map(({ id, title, description, href }) => (
                 <ListItem key={id} title={title} href={href}>
                   {description}

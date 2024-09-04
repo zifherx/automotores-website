@@ -18,6 +18,9 @@ import { ListItem } from "../ListItem";
 import { headerMenu_1 } from "./MenuDesktop.data";
 
 export function MenuDesktop() {
+  const bolsa_trabajo =
+    "https://pe.computrabajo.com/sociedad%20de%20automotores%20inka%20sac/empleos";
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -41,33 +44,23 @@ export function MenuDesktop() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-white text-lg">
-            Sobre nosotros
+            Nosotros
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[800px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    href="/"
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                  >
-                    <div className="mb-2 mt-4 text-2xl font-semibold items-center degradedBlue bg-blueCustom">
-                      iDetalles
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Pequeños detalles, grandes diferencias. Detalles
-                      Personalizados, Regalo y Accesorios
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/shop" title="Tienda">
+              <ListItem href="/quienes-somos" title="Nuestra Empresa">
                 Accede a toda tu información, tus pedidos y mucho más.
               </ListItem>
-              <ListItem href="#" title="Ofertas">
+              <ListItem href="/ubicanos" title="Ubícanos">
                 Sección dedicada a promociones y descuentos especiales.
               </ListItem>
-              <ListItem href="#" title="Accesorios">
+              <ListItem href={bolsa_trabajo} title="Bolsa de Trabajo">
+                Productos complementarios como tazas, molinillos, prensasa, etc.
+              </ListItem>
+              <ListItem
+                href="/libro-reclamaciones"
+                title="Libro de Reclamaciones"
+              >
                 Productos complementarios como tazas, molinillos, prensasa, etc.
               </ListItem>
             </ul>
@@ -86,18 +79,6 @@ export function MenuDesktop() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="#" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                "bg-transparent text-white text-lg"
-              )}
-            >
-              Ubícanos
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

@@ -25,14 +25,14 @@ export function SeparaCita() {
             aquí
           </p>
 
-          <Button className="bg-blueInka text-white w-fit mx-auto hover:bg-blueDarkInka">
+          <Button className="bg-blueInka text-white w-fit mx-auto shadow-lg hover:bg-blueDarkInka">
             Agenda aquí
             <Calendar className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>
 
-      <div className="hidden shadow-[0_0_10px_0_rgba(0,0,0,0.5)] transition flex flex-col p-6">
+      <div className="hidden shadow-[0_0_10px_0_rgba(0,0,0,0.5)] transition p-6">
         <CustomIconTitle
           icon={Building2}
           titleDark="Encuentra"

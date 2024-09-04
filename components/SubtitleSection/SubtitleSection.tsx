@@ -1,8 +1,10 @@
-export function SubtitleSection() {
+import { iSubtitle } from "./SubtitleSection.props";
+
+export function SubtitleSection(props: iSubtitle) {
+  const { subtitle } = props;
   return (
-    <p className="mt-5 block text-center -mx-10 text-sm md:text-lg leading-tight text-grisDarkInka">
-      Contamos con la mayor oferta de marcas del mercado. <br />
-      Desliza y escoge la marca de tu preferencia
+    <p className="max-w-lg mt-5 text-center mx-auto text-sm md:text-base leading-tight text-grisDarkInka ">
+      {subtitle}
     </p>
   );
 }

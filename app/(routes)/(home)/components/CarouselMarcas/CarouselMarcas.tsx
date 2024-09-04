@@ -18,10 +18,12 @@ import { TitleSection } from "@/components/TitleSection";
 import { images_brands } from "./CarouselMarcas.data";
 
 export function CarouselMarcas() {
+  const subtitle =
+    "Contamos con la mayor oferta de marcas del mercado. Desliza y escoge la marca de tu preferencia";
   return (
     <div className="max-w-4xl px-14 lg:max-w-6xl mx-auto py-4 md:px-0 md:py-14 items-center">
       <TitleSection title="Elige alguna de nuestras marcas" />
-      <SubtitleSection />
+      <SubtitleSection subtitle={subtitle} />
       <Carousel
         className="mt-10"
         opts={{ loop: true }}

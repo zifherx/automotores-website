@@ -44,13 +44,13 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "#",
+        href: "/quienes-somos",
         label: "Quiénes somos",
         icon: Users,
       },
       {
         id: 2,
-        href: "#",
+        href: "/ubicanos",
         label: "Ubícanos",
         icon: Building,
       },

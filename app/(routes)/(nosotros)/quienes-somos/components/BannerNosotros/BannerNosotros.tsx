@@ -10,7 +10,7 @@ export function BannerNosotros() {
     type: "video/mp4",
   };
   return (
-    <div className="w-full bg-black p-0 opacity-75">
+    <div className="w-full bg-black p-0 opacity-95">
       <VideoPlayer config={configPlayer} />
     </div>
   );

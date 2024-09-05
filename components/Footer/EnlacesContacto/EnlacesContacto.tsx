@@ -6,7 +6,7 @@ export function EnlacesContacto() {
   return (
     <div className="flex justify-end text-blueDarkInka">
       <Link
-        href="/locales"
+        href="/ubicanos"
         className="flex gap-x-2 uppercase font-bold text-sm items-center lg:mr-28"
       >
         <MapPin className="w-4 h-4" strokeWidth={2} />

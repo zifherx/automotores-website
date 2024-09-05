@@ -48,17 +48,17 @@ export function MenuDesktop() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[800px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/quienes-somos" title="Nuestra Empresa">
+              <ListItem href="/nosotros/quienes-somos" title="Nuestra Empresa">
                 Accede a toda tu información, tus pedidos y mucho más.
               </ListItem>
-              <ListItem href="/ubicanos" title="Ubícanos">
+              <ListItem href="/nosotros/ubicanos" title="Ubícanos">
                 Sección dedicada a promociones y descuentos especiales.
               </ListItem>
               <ListItem href={bolsa_trabajo} title="Bolsa de Trabajo">
                 Productos complementarios como tazas, molinillos, prensasa, etc.
               </ListItem>
               <ListItem
-                href="/libro-reclamaciones"
+                href="/nosotros/libro-reclamaciones"
                 title="Libro de Reclamaciones"
               >
                 Productos complementarios como tazas, molinillos, prensasa, etc.

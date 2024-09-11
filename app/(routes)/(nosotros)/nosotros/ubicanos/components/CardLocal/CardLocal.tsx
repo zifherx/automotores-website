@@ -15,7 +15,7 @@ export function CardLocal(props: iTabContent) {
   } = params;
 
   return (
-    <div className="relative pb-1 bg-white rounded-lg shadow-lg hover:shadow-xl hover:border-black border border-grisInka/40">
+    <div className="relative pb-1 bg-white rounded-lg shadow-xl hover:shadow-2xl hover:border-black border border-grisInka/40">
       <img
         src={`/images/nosotros/${sedeImage}`}
         alt={sedeName}

@@ -15,6 +15,7 @@ import {
 
 import { ListItem } from "../ListItem";
 
+import { listBrands } from "@/data/listBrands";
 import { headerMenu_1 } from "./MenuDesktop.data";
 
 export function MenuDesktop() {
@@ -40,7 +41,13 @@ export function MenuDesktop() {
           <NavigationMenuTrigger className="bg-transparent text-white text-lg">
             Vehículos
           </NavigationMenuTrigger>
-          <NavigationMenuContent></NavigationMenuContent>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-6 md:w-[500px] lg:grid-cols-2">
+              {listBrands.map(({ id, brand, href }) => (
+                <ListItem key={id} href={href} title={brand} />
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-white text-lg">

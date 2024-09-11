@@ -20,7 +20,7 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "/catalogo",
+        href: "/vehiculos/catalogo",
         label: "Catálogo",
         icon: Car,
       },
@@ -56,18 +56,12 @@ export const menu_footer: iMenuFooter[] = [
       },
       {
         id: 3,
-        href: "/nosotros/contactanos",
-        label: "Contáctanos",
-        icon: Phone,
-      },
-      {
-        id: 4,
         href: "https://pe.computrabajo.com/sociedad%20de%20automotores%20inka%20sac/empleos",
         label: "Trabaja con nosotros",
         icon: Briefcase,
       },
       {
-        id: 5,
+        id: 4,
         href: "/nosotros/libro-reclamaciones",
         label: "Libro de reclamaciones",
         icon: BookOpen,
@@ -92,8 +86,8 @@ export const menu_footer: iMenuFooter[] = [
       },
       {
         id: 3,
-        href: "/legal/politica-cookies",
-        label: "Política de cookies",
+        href: "/legal/accesibilidad",
+        label: "Accesibilidad",
         icon: Cookie,
       },
     ],

@@ -6,7 +6,10 @@ export function EmpresaSection() {
   return (
     <div className="max-w-5xl mx-auto p-6 md:p-0 md:py-16 flex flex-col">
       <div>
-        <TitleSection title="La Empresa" />
+        <TitleSection
+          title="La Empresa"
+          classname="text-center text-2xl uppercase font-extrabold text-grisDarkInka"
+        />
         <div className="text-justify leading-7 my-6 font-light">
           <p>
             Automotores Inka S.A.C. es una de las redes de concesionario

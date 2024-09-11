@@ -9,8 +9,8 @@ import { VideoSection } from "./components/VideoSection";
 export default function HomePage() {
   return (
     <>
-      <FirstBlock />
-      {/* <CarouselPortada /> */}
+      {/* <FirstBlock /> */}
+      <CarouselPortada />
       <CarouselMarcas />
       <MasBuscados />
       <VideoSection />

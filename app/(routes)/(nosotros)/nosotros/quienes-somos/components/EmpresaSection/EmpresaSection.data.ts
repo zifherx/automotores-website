@@ -20,7 +20,7 @@ export const objetivos_empresa = [
     title: "Políticas de calidad",
     description:
       "Nuestro compromiso de calidad va dirigido a obtener la satisfacción total de nuestros clientes. En Automotores Inka, nos comprometemos a cumplir con los compromisos adquiridos durante la venta de unidades, repuestos y servicio técnico de los rubros en los que participamos. ",
-    bgDescription: "gray-500",
+    bgDescription: "grisInka",
     imageUrl: "img_calidad.jpg",
   },
 ];

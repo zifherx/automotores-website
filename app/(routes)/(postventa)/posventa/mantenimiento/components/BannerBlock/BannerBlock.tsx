@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function BannerBlock() {
   return (
-    <div className="max-w-7xl md:mx-auto my-10 mx-6 md:mt-20 bg-blueInka">
+    <div className="max-w-7xl md:mx-auto my-10 md:mt-20 bg-blueInka">
       <div className="grid grid-cols-1 md:grid-cols-[60%,1fr] gap-x-0 ">
         <div>
           <Image

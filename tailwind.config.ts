@@ -18,6 +18,20 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        // Head Hyundai
+        headBold: ["var(--font-hyundai-head-bold)"],
+        headRegular: ["var(--font-hyundai-head-regular)"],
+        headMedium: ["var(--font-hyundai-head-medium)"],
+        headLight: ["var(--font-hyundai-head-light)"],
+        // Text Hyundai
+        textBold: ["var(--font-hyundai-text-bold)"],
+        textMedium: ["var(--font-hyundai-text-medium)"],
+        textRegular: ["var(--font-hyundai-text-regular)"],
+        textItalicBold: ["var(--font-hyundai-text-italic-bold)"],
+        textItalicMedium: ["var(--font-hyundai-text-italic-medium)"],
+        textItalicRegular: ["var(--font-hyundai-text-italic-regular)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

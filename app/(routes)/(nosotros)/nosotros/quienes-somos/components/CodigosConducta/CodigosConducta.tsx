@@ -4,7 +4,10 @@ export function CodigosConducta() {
   return (
     <div className="pb-20">
       <div className="max-w-6xl mx-auto border border-grisInka rounded-lg p-6 bg-plomoInka">
-        <TitleSection title="CÓDIGOS DE CONDUCTA AUTOMOTORES INKA" />
+        <TitleSection
+          title="CÓDIGOS DE CONDUCTA AUTOMOTORES INKA"
+          classname="text-center font-bold text-xl uppercase text-grisDarkInka"
+        />
         <div className="mt-5 font-base text-grisDarkInka leading-6">
           <ul className="px-10 list-outside list-disc space-y-3">
             <li>

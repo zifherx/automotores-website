@@ -10,7 +10,7 @@ import {
 
 export function SeparaCita() {
   return (
-    <div className="max-w-7xl mx-auto flex items-center justify-between gap-x-5 md:mb-20">
+    <div className="max-w-7xl md:mx-auto flex items-center justify-between gap-x-5 md:mb-20">
       <div className="shadow-[0_0_10px_0_rgba(0,0,0,0.5)] transition flex flex-col p-6">
         <CustomIconTitle
           icon={CalendarCheck}

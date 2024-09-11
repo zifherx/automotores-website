@@ -11,7 +11,7 @@ import { redes_sociales } from "./Redes.data";
 
 export function BotonesRedes() {
   return (
-    <div className="grid grid-cols-4 gap-5">
+    <div className="grid grid-cols-4 gap-x-1 md:gap-5">
       {redes_sociales.map(({ href, icon: Icon, id, name }) => (
         <TooltipProvider key={id}>
           <Tooltip>

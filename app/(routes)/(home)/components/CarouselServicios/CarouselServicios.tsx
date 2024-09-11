@@ -19,7 +19,10 @@ export function CarouselServicios() {
   return (
     <div className="bg-plomoInka w-full py-20">
       <div className="max-w-7xl mx-auto items-center justify-center px-14 lg:px-0">
-        <TitleSection title="Nuestros Servicios" />
+        <TitleSection
+          title="Nuestros Servicios"
+          classname="text-center text-2xl uppercase font-extrabold text-grisDarkInka"
+        />
 
         <Carousel
           className="py-10"

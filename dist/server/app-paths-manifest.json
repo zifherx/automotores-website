@@ -1,6 +1,5 @@
 {
+  "/(routes)/(nosotros)/nosotros/ubicanos/page": "app/(routes)/(nosotros)/nosotros/ubicanos/page.js",
   "/(routes)/(home)/page": "app/(routes)/(home)/page.js",
-  "/(routes)/(legal)/legal/accesibilidad/page": "app/(routes)/(legal)/legal/accesibilidad/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(routes)/(legal)/legal/terminos-condiciones/page": "app/(routes)/(legal)/legal/terminos-condiciones/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

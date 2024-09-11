@@ -43,8 +43,8 @@ export function MenuDesktop() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[500px] lg:grid-cols-2">
-              {listBrands.map(({ id, brand, href }) => (
-                <ListItem key={id} href={href} title={brand} />
+              {listBrands.map(({ id, brand, src }) => (
+                <ListItem key={id} href={src} title={brand} />
               ))}
             </ul>
           </NavigationMenuContent>

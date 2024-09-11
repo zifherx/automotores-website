@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(routes)/(home)/page": [
+    "/(routes)/(nosotros)/nosotros/ubicanos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(home)/page.js"
+      "static/chunks/app/(routes)/(nosotros)/nosotros/ubicanos/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,15 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/(routes)/(legal)/legal/accesibilidad/page": [
+    "/(routes)/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(legal)/legal/accesibilidad/page.js"
-    ],
-    "/(routes)/(legal)/legal/terminos-condiciones/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(legal)/legal/terminos-condiciones/page.js"
+      "static/chunks/app/(routes)/(home)/page.js"
     ]
   }
 }

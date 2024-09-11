@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
-
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -11,8 +9,9 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-import { carousel_autos } from "./CarouselVehicular.data";
 import { RevealElement } from "@/components/RevealElement";
+
+import { listVehicles } from "@/data/listVehicles";
 
 export function CarouselVehicular() {
   return (
@@ -23,20 +22,13 @@ export function CarouselVehicular() {
         plugins={[Autoplay({ delay: 4000 })]}
       >
         <CarouselContent>
-          {carousel_autos.map(({ id, name, vehicle }) => (
+          {listVehicles.map(({ id, modelo, image_url }) => (
             <CarouselItem key={id}>
               <img
-                src={`/images/models/${vehicle}`}
-                alt={name}
+                src={`/images/models/${image_url}`}
+                alt={modelo}
                 className="object-cover w-[700px]"
               />
-              {/* <Image
-                src={`/images/models/${vehicle}`}
-                alt={name}
-                width={700}
-                height={500}
-                priority
-              /> */}
             </CarouselItem>
           ))}
         </CarouselContent>

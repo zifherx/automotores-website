@@ -20,7 +20,7 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "/catalogo",
+        href: "/vehiculos/catalogo",
         label: "Catálogo",
         icon: Car,
       },
@@ -32,7 +32,7 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "#",
+        href: "/posventa/mantenimiento",
         label: "Separa tu cita",
         icon: NotebookText,
       },
@@ -44,31 +44,25 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "/quienes-somos",
+        href: "/nosotros/quienes-somos",
         label: "Quiénes somos",
         icon: Users,
       },
       {
         id: 2,
-        href: "/ubicanos",
+        href: "/nosotros/ubicanos",
         label: "Ubícanos",
         icon: Building,
       },
       {
         id: 3,
-        href: "#",
-        label: "Contáctanos",
-        icon: Phone,
-      },
-      {
-        id: 4,
-        href: "#",
+        href: "https://pe.computrabajo.com/sociedad%20de%20automotores%20inka%20sac/empleos",
         label: "Trabaja con nosotros",
         icon: Briefcase,
       },
       {
-        id: 5,
-        href: "#",
+        id: 4,
+        href: "/nosotros/libro-reclamaciones",
         label: "Libro de reclamaciones",
         icon: BookOpen,
       },
@@ -80,20 +74,20 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "#",
+        href: "/legal/copyright",
         label: "Copyright",
         icon: Copyright,
       },
       {
         id: 2,
-        href: "#",
+        href: "/legal/terminos-condiciones",
         label: "Términos y condiciones",
         icon: Scale,
       },
       {
         id: 3,
-        href: "#",
-        label: "Política de cookies",
+        href: "/legal/accesibilidad",
+        label: "Accesibilidad",
         icon: Cookie,
       },
     ],

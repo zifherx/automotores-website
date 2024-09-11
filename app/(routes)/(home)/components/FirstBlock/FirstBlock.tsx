@@ -2,7 +2,6 @@
 
 import CountUp from "react-countup";
 
-import { RevealElement } from "@/components/RevealElement";
 import { CarouselVehicular } from "../CarouselVehicular";
 
 export function FirstBlock() {

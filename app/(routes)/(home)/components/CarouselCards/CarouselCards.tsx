@@ -10,10 +10,10 @@ import {
 
 import { CardVehicular } from "@/components/CardVehicular";
 
-import { vehicles_offers } from "./CarouselCards.data";
+import { listVehicles } from "@/data/listVehicles";
 
 export function CarouselCards() {
-  const just_offer = vehicles_offers.filter((item) => item.isOffer);
+  const just_offer = listVehicles.filter((item) => item.isEntrega48H);
 
   return (
     <Carousel
@@ -24,14 +24,7 @@ export function CarouselCards() {
       <CarouselContent>
         {just_offer.map((item) => (
           <CarouselItem key={item.id} className="sm:basis-1 lg:basis-1/3">
-            <CardVehicular
-              key={item.modelo}
-              carroceria={item.carroceria}
-              imageUrl={item.image_url}
-              marca={item.marca}
-              modelo={item.modelo}
-              precio={item.precio}
-            />
+            <CardVehicular vehicle={item} />
           </CarouselItem>
         ))}
       </CarouselContent>

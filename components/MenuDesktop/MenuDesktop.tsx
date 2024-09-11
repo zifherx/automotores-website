@@ -15,6 +15,7 @@ import {
 
 import { ListItem } from "../ListItem";
 
+import { listBrands } from "@/data/listBrands";
 import { headerMenu_1 } from "./MenuDesktop.data";
 
 export function MenuDesktop() {
@@ -40,7 +41,13 @@ export function MenuDesktop() {
           <NavigationMenuTrigger className="bg-transparent text-white text-lg">
             Vehículos
           </NavigationMenuTrigger>
-          <NavigationMenuContent></NavigationMenuContent>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-6 md:w-[500px] lg:grid-cols-2">
+              {listBrands.map(({ id, brand, href }) => (
+                <ListItem key={id} href={href} title={brand} />
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-white text-lg">
@@ -48,17 +55,17 @@ export function MenuDesktop() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[800px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/quienes-somos" title="Nuestra Empresa">
+              <ListItem href="/nosotros/quienes-somos" title="Nuestra Empresa">
                 Accede a toda tu información, tus pedidos y mucho más.
               </ListItem>
-              <ListItem href="/ubicanos" title="Ubícanos">
+              <ListItem href="/nosotros/ubicanos" title="Ubícanos">
                 Sección dedicada a promociones y descuentos especiales.
               </ListItem>
               <ListItem href={bolsa_trabajo} title="Bolsa de Trabajo">
                 Productos complementarios como tazas, molinillos, prensasa, etc.
               </ListItem>
               <ListItem
-                href="/libro-reclamaciones"
+                href="/nosotros/libro-reclamaciones"
                 title="Libro de Reclamaciones"
               >
                 Productos complementarios como tazas, molinillos, prensasa, etc.

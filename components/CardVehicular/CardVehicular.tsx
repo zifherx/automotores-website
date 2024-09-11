@@ -1,41 +1,69 @@
 /* eslint-disable @next/next/no-img-element */
-import { formatUSDPrice } from "@/lib/formatPrice";
+import Image from "next/image";
+import { Car } from "lucide-react";
+
 import { Button } from "../ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { formatPENPrice, formatUSDPrice } from "@/lib/formatPrice";
 
-import { iCardVehicular } from "./CardVehicular.props";
+import { iCardProduct } from "./CardVehicular.props";
 
-export function CardVehicular(props: iCardVehicular) {
-  const { carroceria, imageUrl, marca, modelo, precio } = props;
+export function CardVehicular(props: iCardProduct) {
+  const { vehicle } = props;
+  const { carroceria, image_url, marca, modelo, precio, isEntrega48H, isGLP } =
+    vehicle;
+  const tc = 4.1;
   return (
-    <Card className="w-[380px] md:w-[350px] border border-grisInka rounded-xl hover:border-black">
-      <CardHeader>
-        <img
-          src={`/images/models/${imageUrl}`}
-          alt={modelo}
-          className="object-contain h-[200px]"
-        />
-        <p className="text-xs text-grisDarkInka text-right">
-          Imagen referencial
+    <div className="relative p-1 rounded-xl shadow-md bg-white border border-grisInka/55 hover:border-black">
+      <Image
+        src={`/images/models/${image_url}`}
+        alt={modelo}
+        width={400}
+        height={600}
+        className="object-contain h-[200px]"
+        priority
+      />
+      <p className="text-xs text-grisDarkInka text-right mr-5">
+        Imagen referencial
+      </p>
+      <div className="p-4">
+        <div className="flex justify-between gap-5 ">
+          <div className="text-grisDarkInka leading-tight">
+            <p className="font-bold text-xl">{carroceria}</p>
+            <p className="font-medium text-xl">{marca}</p>
+            <p className="font-bold text-xl">{modelo}</p>
+          </div>
+          <div className=" h-fit">
+            {isGLP && (
+              <Image
+                src={`/images/offers/glp-gratis.png`}
+                alt="GLP Gratis"
+                width={100}
+                height={50}
+                priority
+              />
+            )}
+            {isEntrega48H && (
+              <Image
+                src={`/images/offers/disponibilidad-48.png`}
+                alt="Disponibilidad 48 horas"
+                width={100}
+                height={50}
+                priority
+              />
+            )}
+          </div>
+        </div>
+
+        <p className="mt-5 font-medium">Desde</p>
+        <p className="text-center text-black text-lg font-bold mt-3">
+          {formatUSDPrice(precio)} | {formatPENPrice(precio * tc)}
         </p>
-      </CardHeader>
-      <CardContent className="text-grisDarkInka">
-        <p className="capitalize leading-tight">{carroceria}</p>
-        <p className="capitalize font-bold leading-tight">{marca}</p>
-        <p className="capitalize font-semibold leading-tight">{modelo}</p>
-        <p className="mt-5">Desde</p>
-        <p className="text-center font-bold text-2xl">
-          {formatUSDPrice(precio)}
-        </p>
-      </CardContent>
-      <CardFooter className="flex flex-col">
-        <Button className="uppercase h-5 py-4 mb-2 w-full rounded-2xl bg-redInka text-white hover:bg-redDarkInka">
-          Cotizar
-        </Button>
-        <Button className="uppercase h-5 py-4 text-xs w-full rounded-2xl bg-grisInka text-white hover:bg-grisDarkInka">
+
+        <Button className=" mt-8 w-full h-6 py-4 uppercase text-[12px] rounded-2xl bg-redInka text-white hover:bg-redDarkInka">
           Ver más detalles del auto
+          <Car className="w-5 h-5 ml-2" strokeWidth={2} />
         </Button>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 }

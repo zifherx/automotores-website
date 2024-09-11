@@ -3,10 +3,6 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import { Heart } from "lucide-react";
-
-import { BtnShorcut } from "../BtnShorcut";
-import { ToggleTheme } from "../ToggleTheme";
 import { MenuDesktop } from "../MenuDesktop";
 import { MenuMobile } from "../MenuMobile";
 
@@ -23,6 +19,7 @@ export function Navbar() {
           width={200}
           height={40}
           onClick={() => router.push("/")}
+          priority
         />
 
         <div className="items-center justify-between hidden sm:flex">
@@ -33,8 +30,11 @@ export function Navbar() {
           <MenuMobile />
         </div>
 
-        <div className="bg-transparent">
-          {/* <div className="flex items-center justify-between gap-2 sm:gap-5"> */}
+        <div className="flex items-center justify-between gap-2 sm:gap-5">
+          {/* <Button className="border border-white bg-transparent hover:border-blueDarkInka hover:bg-white hover:text-black">
+            Cotiza Aquí
+            <Car className="ml-2 w-5 h-5" />
+          </Button> */}
           {/* <BtnShorcut icon={Heart} tooltip="Ir al wishlist" /> */}
           {/* <ToggleTheme /> */}
         </div>

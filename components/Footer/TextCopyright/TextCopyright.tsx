@@ -4,16 +4,16 @@ export function TextCopyright() {
   const actualYear = new Date().getFullYear();
 
   return (
-    <div className="flex items-center justify-between text-xs text-grisDarkInka">
-      <span className="text-left">
+    <div className="flex flex-col md:flex-row items-center justify-center md:justify-between text-xs text-grisDarkInka">
+      <p className="text-left">
         &copy; {actualYear} SOCIEDAD AUTOMOTORES INKA S.A.C.
-      </span>
-      <span className="uppercase text-right">
+      </p>
+      <p className="uppercase text-right">
         DISEÑADO POR &nbsp;
         <Link href="https://ziphonex.com" className="font-bold">
           Ziphonex
         </Link>
-      </span>
+      </p>
     </div>
   );
 }

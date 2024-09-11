@@ -16,25 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/(routes)/(nosotros)/nosotros/quienes-somos/page": [
+    "/(routes)/(legal)/legal/accesibilidad/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(nosotros)/nosotros/quienes-somos/page.js"
+      "static/chunks/app/(routes)/(legal)/legal/accesibilidad/page.js"
     ],
-    "/(routes)/(catalogo)/vehiculos/catalogo/page": [
+    "/(routes)/(legal)/legal/terminos-condiciones/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(catalogo)/vehiculos/catalogo/page.js"
-    ],
-    "/(routes)/(nosotros)/nosotros/ubicanos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(nosotros)/nosotros/ubicanos/page.js"
-    ],
-    "/(routes)/(postventa)/posventa/mantenimiento/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(postventa)/posventa/mantenimiento/page.js"
+      "static/chunks/app/(routes)/(legal)/legal/terminos-condiciones/page.js"
     ]
   }
 }

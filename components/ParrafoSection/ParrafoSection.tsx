@@ -1,5 +1,6 @@
 import { TitleSection } from "@/components/TitleSection";
-import { iParrafoSection } from "./ParrafoSection.props";
+
+import { iParrafoSection } from "@/interfaces/iParrafo";
 
 export function ParrafoSection(props: iParrafoSection) {
   const { title, parrafos } = props;

@@ -1,6 +1,6 @@
-import { iParrafoSectionProps } from "@/components/ParrafoSection/ParrafoSection.props";
+import { iParrafoSection } from "@/interfaces/iParrafo";
 
-export const data_accesibilidad: iParrafoSectionProps[] = [
+export const data_accesibilidad: iParrafoSection[] = [
   {
     id: 1,
     title: "A.- ¿Qué es la accesibilidad web?",

@@ -1,4 +1,4 @@
-import { iParrafoSection } from "@/components/ParrafoSection/ParrafoSection.props";
+import { iParrafoSection } from "@/interfaces/iParrafo";
 
 export const data_TerminosCondiciones: iParrafoSection[] = [
   {

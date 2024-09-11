@@ -1,6 +1,7 @@
 import { TitleSection } from "@/components/TitleSection";
-import { data_accesibilidad } from "./accesibilidad.data";
 import { ParrafoSection } from "@/components/ParrafoSection";
+
+import { data_accesibilidad } from "./accesibilidad.data";
 
 export default function PoliticaCookiesPage() {
   return (

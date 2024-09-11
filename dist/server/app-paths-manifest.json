@@ -1,8 +1,6 @@
 {
   "/(routes)/(home)/page": "app/(routes)/(home)/page.js",
-  "/(routes)/(nosotros)/nosotros/quienes-somos/page": "app/(routes)/(nosotros)/nosotros/quienes-somos/page.js",
-  "/(routes)/(catalogo)/vehiculos/catalogo/page": "app/(routes)/(catalogo)/vehiculos/catalogo/page.js",
-  "/(routes)/(nosotros)/nosotros/ubicanos/page": "app/(routes)/(nosotros)/nosotros/ubicanos/page.js",
-  "/(routes)/(postventa)/posventa/mantenimiento/page": "app/(routes)/(postventa)/posventa/mantenimiento/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(routes)/(legal)/legal/accesibilidad/page": "app/(routes)/(legal)/legal/accesibilidad/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(routes)/(legal)/legal/terminos-condiciones/page": "app/(routes)/(legal)/legal/terminos-condiciones/page.js"
 }

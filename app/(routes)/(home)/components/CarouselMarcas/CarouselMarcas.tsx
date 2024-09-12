@@ -48,7 +48,7 @@ export function CarouselMarcas() {
                   width={120}
                   height={120}
                   onClick={() =>
-                    router.push(`/vehiculos/catalogo?marca=${value}`)
+                    router.push(`/ligeros/catalogo?marca=${value}`)
                   }
                 />
               </CarouselItem>

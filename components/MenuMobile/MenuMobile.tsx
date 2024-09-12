@@ -8,7 +8,7 @@ export function MenuMobile() {
   return (
     <Popover>
       <PopoverTrigger>
-        <BtnShorcut icon={Menu} />
+        <BtnShorcut icon={Menu} className="text-black" />
       </PopoverTrigger>
       <PopoverContent className="p-2">
         {menuMobile.map(({ id, href, icon: Icon, title }) => (

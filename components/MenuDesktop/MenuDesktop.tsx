@@ -30,7 +30,7 @@ export function MenuDesktop() {
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
-                "bg-transparent text-white text-lg"
+                "bg-transparent font-headMedium text-black text-lg"
               )}
             >
               Inicio
@@ -38,19 +38,23 @@ export function MenuDesktop() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-white text-lg">
+          <NavigationMenuTrigger className="bg-transparent font-headMedium text-black text-lg">
             Vehículos
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[500px] lg:grid-cols-2">
-              {listBrands.map(({ id, brand, src }) => (
-                <ListItem key={id} href={src} title={brand} />
+              {listBrands.map(({ id, brand, value }) => (
+                <ListItem
+                  key={id}
+                  href={`/ligeros/catalogo?marca=${value}`}
+                  title={brand}
+                />
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-white text-lg">
+          <NavigationMenuTrigger className="bg-transparent font-headMedium text-black text-lg">
             Nosotros
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -74,7 +78,7 @@ export function MenuDesktop() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-white text-lg">
+          <NavigationMenuTrigger className="bg-transparent font-headMedium text-black text-lg">
             Posventa
           </NavigationMenuTrigger>
           <NavigationMenuContent>

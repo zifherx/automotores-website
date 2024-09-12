@@ -1,5 +1,4 @@
 {
-  "/(routes)/(nosotros)/nosotros/ubicanos/page": "app/(routes)/(nosotros)/nosotros/ubicanos/page.js",
-  "/(routes)/(home)/page": "app/(routes)/(home)/page.js",
+  "/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page": "app/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

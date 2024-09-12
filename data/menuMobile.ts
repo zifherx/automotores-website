@@ -1,5 +1,5 @@
 import { iMenuMobile } from "@/interfaces/iMenuMobile";
-import { BookOpenText, House, MapPin, Users, Wrench } from "lucide-react";
+import { Car, House, MapPin, Truck, Users, Wrench } from "lucide-react";
 
 export const menuMobile: iMenuMobile[] = [
   {
@@ -10,9 +10,15 @@ export const menuMobile: iMenuMobile[] = [
   },
   {
     id: 2,
-    title: "Catálogo",
-    href: "/vehiculos/catalogo",
-    icon: BookOpenText,
+    title: "Catálogo de Ligeros",
+    href: "/ligeros/catalogo",
+    icon: Car,
+  },
+  {
+    id: 2,
+    title: "Catálogo de Camiones",
+    href: "/camiones/catalogo",
+    icon: Truck,
   },
   {
     id: 3,

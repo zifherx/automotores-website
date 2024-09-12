@@ -10,11 +10,11 @@ export function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="bg-blueInka w-full">
+    <nav className="bg-[#F8F8F8] w-full">
       <div className="h-20 flex items-center justify-between p-4 mx-auto sm:max-w-4xl md:max-w-7xl">
         <Image
           className="cursor-pointer"
-          src="/images/logo_1.png"
+          src="/images/logo-color.png"
           alt="Logo Automotores Inka"
           width={200}
           height={40}

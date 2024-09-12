@@ -6,8 +6,8 @@ import {
   Cookie,
   Copyright,
   NotebookText,
-  Phone,
   Scale,
+  Truck,
   Users,
 } from "lucide-react";
 
@@ -20,9 +20,15 @@ export const menu_footer: iMenuFooter[] = [
     submenu: [
       {
         id: 1,
-        href: "/vehiculos/catalogo",
-        label: "Catálogo",
+        href: "/ligeros/catalogo",
+        label: "Catálogo de Ligeros",
         icon: Car,
+      },
+      {
+        id: 2,
+        href: "/camiones/catalogo",
+        label: "Catálogo de Camiones",
+        icon: Truck,
       },
     ],
   },

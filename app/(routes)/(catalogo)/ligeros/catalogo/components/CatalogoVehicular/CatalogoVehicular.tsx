@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { FiltrosCatalogo } from "../FiltrosCatalogo";
 import { ListVehicles } from "../ListVehicles";
 import { iCatalogoProps } from "./Catalogo.props";
-import { iVehicleCar } from "@/interfaces/iVehicler";
+import { iVehicleCar } from "@/interfaces/iVehicle";
 import { MigajasPan } from "@/components/MigajasPan";
 import { useRouter, useSearchParams } from "next/navigation";
 

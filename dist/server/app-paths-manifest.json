@@ -1,4 +1,5 @@
 {
-  "/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page": "app/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(routes)/(home)/page": "app/(routes)/(home)/page.js",
+  "/(routes)/(catalogo)/ligeros/catalogo/page": "app/(routes)/(catalogo)/ligeros/catalogo/page.js",
+  "/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page": "app/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page.js"
 }

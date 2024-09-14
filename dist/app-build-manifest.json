@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page": [
+    "/(routes)/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page.js"
+      "static/chunks/app/(routes)/(home)/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -15,6 +15,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
+    ],
+    "/(routes)/(catalogo)/ligeros/catalogo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/(catalogo)/ligeros/catalogo/page.js"
+    ],
+    "/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/(catalogo)/ligeros/[marca]/[modelo]/page.js"
     ]
   }
 }

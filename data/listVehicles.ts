@@ -1,4 +1,4 @@
-import { iVehicleCar } from "@/interfaces/iVehicler";
+import { iModelCar, iVehicleCar } from "@/interfaces/iVehicle";
 
 export const listVehicles: iVehicleCar[] = [
   // BAIC
@@ -1226,6 +1226,166 @@ export const listVehicles: iVehicleCar[] = [
     precio: 52990,
     isEntrega48H: false,
     isGas: false,
+    isGLP: false,
+    isActive: true,
+  },
+];
+
+export const listModelos: iModelCar[] = [
+  // BAIC
+  {
+    id: 1,
+    name: "X35",
+    imageBase: "baic/new-x35.png",
+    marca: {
+      id: 1,
+      name: "Baic",
+      imageUrl: "BAIC_logo.png",
+      portadaUrl: "banner-baic.png",
+    },
+    carroceria: {
+      id: 1,
+      name: "SUV",
+    },
+    versiones: [
+      {
+        id: 1,
+        codVersion: "x35-comfort-mt",
+        version: "MT Comfort",
+        precio: 14990,
+        imageUrl: "baic/new-x35.png",
+      },
+      {
+        id: 2,
+        codVersion: "x35-exclusive-mt",
+        version: "MT Exclusive",
+        precio: 14990,
+        imageUrl: "baic/new-x35.png",
+      },
+      {
+        id: 3,
+        codVersion: "x35-exclusive-cvt",
+        version: "CVT Exclusive Turbo",
+        precio: 14990,
+        imageUrl: "baic/new-x35.png",
+      },
+    ],
+    colores: [
+      {
+        id: 1,
+        label: "Rojo",
+        hex: "#86091B",
+        carColor: "x35-rojo.png",
+        isActive: true,
+      },
+    ],
+    precioBase: 14990,
+    features: {
+      features1: [
+        {
+          superTitle: "Motor",
+          mainTitle: "1.5L",
+          subTitle: "",
+        },
+        {
+          superTitle: "Potencia (HP/RPM)",
+          mainTitle: "114HP",
+          subTitle: "6,000 rpm",
+        },
+        {
+          superTitle: "Transmisión",
+          mainTitle: "MT/AT",
+          subTitle: "",
+        },
+        {
+          superTitle: "Tracción",
+          mainTitle: "4x2",
+          subTitle: "",
+        },
+      ],
+      features2: [
+        {
+          superTitle: "Número de airbags",
+          mainTitle: "2",
+          subTitle: "",
+        },
+        {
+          superTitle: "Capacidad Maletero",
+          mainTitle: "400 Lts",
+          subTitle: "",
+        },
+        {
+          superTitle: "Equipamiento",
+          mainTitle: "Pantalla",
+          subTitle: "8''",
+        },
+        {
+          superTitle: "Garantía",
+          mainTitle: "5 años",
+          subTitle: "100,000 km",
+        },
+      ],
+    },
+    ficha_tecnica:
+      "https://baic.pe/wp-content/uploads/2023/10/FT_BAIC_X35_OCT-2023_Vf.pdf",
+    gallery: [
+      {
+        id: 1,
+        name: "x35-1",
+        imageUrl: "IMG-1.jpg",
+      },
+      {
+        id: 2,
+        name: "x35-2",
+        imageUrl: "IMG-2.jpg",
+      },
+      {
+        id: 3,
+        name: "x35-3",
+        imageUrl: "IMG-3.jpg",
+      },
+      {
+        id: 4,
+        name: "x35-4",
+        imageUrl: "IMG-4.jpg",
+      },
+      {
+        id: 5,
+        name: "x35-5",
+        imageUrl: "IMG-5.jpg",
+      },
+      {
+        id: 6,
+        name: "x35-6",
+        imageUrl: "IMG-6.jpg",
+      },
+      {
+        id: 7,
+        name: "x35-7",
+        imageUrl: "IMG-7.jpg",
+      },
+      {
+        id: 8,
+        name: "x35-8",
+        imageUrl: "IMG-8.jpg",
+      },
+      {
+        id: 9,
+        name: "x35-9",
+        imageUrl: "IMG-9.jpg",
+      },
+      {
+        id: 10,
+        name: "x35-10",
+        imageUrl: "IMG-10.jpg",
+      },
+      {
+        id: 11,
+        name: "x35-11",
+        imageUrl: "IMG-11.jpg",
+      },
+    ],
+    isEntrega48H: true,
     isGLP: false,
     isActive: true,
   },

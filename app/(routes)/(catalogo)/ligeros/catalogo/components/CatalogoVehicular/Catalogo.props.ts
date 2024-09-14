@@ -1,4 +1,4 @@
-import { iVehicleCar } from "@/interfaces/iVehicler";
+import { iVehicleCar } from "@/interfaces/iVehicle";
 
 export interface iCatalogoProps {
   vehiculos: iVehicleCar[];

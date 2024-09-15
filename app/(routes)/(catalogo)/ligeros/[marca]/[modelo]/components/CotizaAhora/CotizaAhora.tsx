@@ -9,13 +9,14 @@ export function CotizaAhora(props: iCotizaAhoraProps) {
   const { imagenBase, modelo } = props;
 
   return (
-    <div className="p-6 max-w-7xl mx-auto lg:my-24">
+    <div className="p-0 lg:p-6 max-w-7xl mx-auto my-14 lg:my-24">
       <div className="bg-black rounded-xl p-6 relative lg:p-24">
         <RevealElement
           position="bottom"
-          className="lg:absolute lg:-right-28 top-5"
+          className="flex lg:absolute lg:-right-28 top-0 lg:top-5"
         >
           <Image
+            className="mx-auto"
             src={`/images/models/${imagenBase}`}
             alt={modelo}
             width={600}
@@ -23,9 +24,9 @@ export function CotizaAhora(props: iCotizaAhoraProps) {
           />
         </RevealElement>
 
-        <div className="lg:flex gap-x-6">
-          <div className="text-white flex flex-col gap-3">
-            <div>
+        <div className="lg:flex gap-x-6 mx-auto ">
+          <div className="text-white flex flex-col gap-3 text-center lg:text-left">
+            <div className="">
               <p className="text-lg font-textRegular">
                 ¿Aún no estás seguro de cotizar?
               </p>
@@ -36,7 +37,7 @@ export function CotizaAhora(props: iCotizaAhoraProps) {
 
             <Link
               href="#"
-              className="py-2 px-3 bg-transparent flex items-center rounded-xl text-lg w-fit font-headMedium border-2 border-white hover:bg-white hover:text-black"
+              className="py-2 px-3 bg-transparent mx-auto lg:mx-0 flex items-center rounded-xl text-lg w-fit font-headMedium border-2 border-white hover:bg-white hover:text-black"
             >
               <PencilLine className="w-5 h-5 mr-2" />
               Cotizar ahora

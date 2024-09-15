@@ -12,7 +12,7 @@ export function FichaTecnica(props: iFichaTecnicaProps) {
       <Link
         href={href}
         target="_blank"
-        className="py-2 px-4 rounded-xl bg-[#F1F5F9]  flex items-center font-headRegular text-black text-lg hover:bg-redInka hover:text-white transition-all"
+        className="py-2 px-4 rounded-lg md:rounded-xl bg-[#F1F5F9] flex items-center font-headRegular text-black text-lg hover:bg-redInka hover:text-white transition-all"
       >
         <Download className="w-5 h-5 mr-2" strokeWidth={2} />
         Ficha Técnica

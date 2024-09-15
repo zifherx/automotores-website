@@ -23,10 +23,10 @@ export function SectionColor(props: iSectionColorProps) {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="p-10">
+      <div className="py-10 px-2 md:px-10">
         <TitleSection
           title="Selecciona tu color"
-          classname="font-headRegular uppercase text-4xl text-center"
+          classname="font-headRegular md:uppercase text-3xl md:text-4xl text-center"
         />
         <div className="mt-10">
           <div className="flex flex-col items-center">

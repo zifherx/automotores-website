@@ -30,14 +30,7 @@ export function Navbar() {
           <MenuMobile />
         </div>
 
-        <div className="flex items-center justify-between gap-2 sm:gap-5">
-          {/* <Button className="border border-white bg-transparent hover:border-blueDarkInka hover:bg-white hover:text-black">
-            Cotiza Aquí
-            <Car className="ml-2 w-5 h-5" />
-          </Button> */}
-          {/* <BtnShorcut icon={Heart} tooltip="Ir al wishlist" /> */}
-          {/* <ToggleTheme /> */}
-        </div>
+        <div className="hidden sm:flex items-center justify-between gap-2 sm:gap-5"></div>
       </div>
     </nav>
   );

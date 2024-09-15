@@ -14,6 +14,6 @@ export const linkUtiles: iLinkUtil[] = [
   {
     id: 3,
     label: "Cotizador",
-    href: "/cotizador",
+    href: "/cotizacion",
   },
 ];

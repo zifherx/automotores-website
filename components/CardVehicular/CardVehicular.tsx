@@ -6,11 +6,15 @@ import { Button } from "../ui/button";
 import { formatPENPrice, formatUSDPrice } from "@/lib/formatPrice";
 
 import { iCardProduct } from "./CardVehicular.props";
+import { useRouter } from "next/navigation";
+import { getRouteForModel } from "@/lib/routingDynamic";
 
 export function CardVehicular(props: iCardProduct) {
   const { vehicle } = props;
   const { carroceria, image_url, marca, modelo, precio, isEntrega48H, isGLP } =
     vehicle;
+
+  const router = useRouter();
   const tc = 4.1;
   return (
     <div className="relative p-1 rounded-xl shadow-md bg-white border border-grisInka/55 hover:border-black">
@@ -59,7 +63,14 @@ export function CardVehicular(props: iCardProduct) {
           {formatUSDPrice(precio)} | {formatPENPrice(precio * tc)}
         </p>
 
-        <Button className=" mt-8 w-full h-6 py-4 uppercase text-[12px] rounded-2xl bg-redInka text-white hover:bg-redDarkInka">
+        <Button
+          className=" mt-8 w-full h-6 py-4 uppercase text-[12px] rounded-2xl bg-redInka text-white hover:bg-redDarkInka"
+          onClick={() =>
+            router.push(
+              `/ligeros/${marca.toLowerCase()}/${getRouteForModel(modelo)}`
+            )
+          }
+        >
           Ver más detalles del auto
           <Car className="w-5 h-5 ml-2" strokeWidth={2} />
         </Button>

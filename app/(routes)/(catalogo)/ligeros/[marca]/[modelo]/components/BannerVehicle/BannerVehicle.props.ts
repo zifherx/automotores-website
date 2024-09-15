@@ -5,4 +5,5 @@ export interface iBannerVehicleProps {
   marca: string;
   modelo: string;
   imagenBase: string;
+  cotizacion: iModelCar;
 }

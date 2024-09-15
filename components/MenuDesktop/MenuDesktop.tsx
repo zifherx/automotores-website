@@ -23,7 +23,7 @@ export function MenuDesktop() {
     "https://pe.computrabajo.com/sociedad%20de%20automotores%20inka%20sac/empleos";
 
   return (
-    <NavigationMenu>
+    <NavigationMenu className="z-50">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>

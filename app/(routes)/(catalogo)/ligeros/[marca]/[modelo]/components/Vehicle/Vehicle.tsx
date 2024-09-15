@@ -15,6 +15,7 @@ export function Vehicle(props: iVehicleProps) {
         marca={vehicle.marca.name}
         modelo={vehicle.name}
         imagenBase={vehicle.imageBase}
+        cotizacion={vehicle}
       />
       <FeaturesVehicle features={vehicle.features} />
       <FichaTecnica href={vehicle.ficha_tecnica} />

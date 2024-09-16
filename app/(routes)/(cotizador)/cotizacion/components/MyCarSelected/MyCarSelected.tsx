@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { formatPENPrice, formatUSDPrice } from "@/lib/formatPrice";
 import { iMyCarSelectedProp } from "./MyCarSelected.props";
 

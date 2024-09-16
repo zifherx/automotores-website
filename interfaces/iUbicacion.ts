@@ -6,4 +6,5 @@ export interface iConcesionario {
   id: number;
   name: string;
   value: string;
+  direccion: string;
 }

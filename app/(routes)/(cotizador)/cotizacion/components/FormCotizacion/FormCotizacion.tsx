@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Send } from "lucide-react";
+import axios from "axios";
 
 import {
   Form,
@@ -30,8 +31,11 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 import { formCotizacionSchema } from "./FormCotizacion.form";
 import { listDepartamentos } from "@/data/listLocales";
+import { iFormCotizacionProps } from "./FormCotizacion.prop";
 
-export function FormCotizacion() {
+export function FormCotizacion(props: iFormCotizacionProps) {
+  const { myCar } = props;
+
   const [departamento, setDepartamento] = useState<any>("");
   const [concesionario, setConcesionario] = useState("");
 
@@ -47,12 +51,27 @@ export function FormCotizacion() {
       concesionario: "",
       intencion_compra: "",
       checkDatosPersonales: false,
-      checkPromociones: false,
+      checkPromociones: "",
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formCotizacionSchema>) => {
-    console.log(values);
+  const onSubmit = async (values: z.infer<typeof formCotizacionSchema>) => {
+    try {
+      // console.log(values);
+      const query = await axios.post("api/send", {
+        ...values,
+        departamento,
+        concesionario,
+        brandCar: myCar?.marca.name,
+        nameCar: myCar?.name,
+        imageCar:
+          "https://baic.pe/wp-content/uploads/2017/09/modelo-new-x35-cotizar.png",
+        priceCar: myCar?.precioBase,
+      });
+      console.log(query);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const { isLoading, isValid } = form.formState;
@@ -172,7 +191,7 @@ export function FormCotizacion() {
                   onValueChange={(value) => {
                     setDepartamento(value);
                     setConcesionario("");
-                    field.onChange;
+                    return field.onChange;
                   }}
                   defaultValue={field.value}
                 >
@@ -221,9 +240,12 @@ export function FormCotizacion() {
                           Sede {departamento}
                         </SelectLabel>
                         {listDepartamentos[departamento].map(
-                          ({ id, name, value }) => (
+                          ({ id, name, value, direccion }) => (
                             <SelectItem key={id} value={value}>
-                              {name}
+                              <div className="flex flex-col items-start">
+                                <p className="font-semibold">{name}</p>
+                                <small>{direccion}</small>
+                              </div>
                             </SelectItem>
                           )
                         )}
@@ -360,7 +382,7 @@ export function FormCotizacion() {
           <Button
             type="submit"
             className="w-full font-headMedium text-xl uppercase bg-black hover:bg-grisDarkInka"
-            // disabled={!isValid}
+            disabled={!isValid}
           >
             Enviar
             <Send className="w-5 h-5 ml-2" />

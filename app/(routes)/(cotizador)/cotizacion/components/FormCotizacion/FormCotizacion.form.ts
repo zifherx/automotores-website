@@ -11,5 +11,5 @@ export const formCotizacionSchema = z.object({
   concesionario: z.string(),
   intencion_compra: z.string(),
   checkDatosPersonales: z.boolean(),
-  checkPromociones: z.boolean() || z.null(),
+  checkPromociones: z.string(),
 });

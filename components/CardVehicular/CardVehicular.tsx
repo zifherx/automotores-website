@@ -15,7 +15,7 @@ export function CardVehicular(props: iCardProduct) {
     vehicle;
 
   const router = useRouter();
-  const tc = 4.1;
+  const tc = 3.8;
   return (
     <div className="relative p-1 rounded-xl shadow-md bg-white border border-grisInka/55 hover:border-black">
       <Image
@@ -59,8 +59,9 @@ export function CardVehicular(props: iCardProduct) {
         </div>
 
         <p className="mt-5 font-medium">Desde</p>
-        <p className="text-center text-black text-lg font-bold mt-3">
-          {formatUSDPrice(precio)} | {formatPENPrice(precio * tc)}
+        <p className="text-center text-black text-2xl font-bold mt-3">
+          {formatUSDPrice(precio)} &nbsp;&nbsp; | &nbsp;&nbsp;{" "}
+          {formatPENPrice(precio * tc)}
         </p>
 
         <Button

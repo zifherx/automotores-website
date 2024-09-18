@@ -13,7 +13,7 @@ export function CotizaAhora(props: iCotizaAhoraProps) {
       <div className="bg-black rounded-xl p-6 relative lg:p-24">
         <RevealElement
           position="bottom"
-          className="flex lg:absolute lg:-right-28 top-0 lg:top-5"
+          className="flex lg:absolute lg:-right-28 top-0 lg:top-0 "
         >
           <Image
             className="mx-auto"
@@ -24,7 +24,7 @@ export function CotizaAhora(props: iCotizaAhoraProps) {
           />
         </RevealElement>
 
-        <div className="lg:flex gap-x-6 mx-auto ">
+        <div className="lg:max-w-lg lg:flex gap-x-6 mx-auto lg:mx-0">
           <div className="text-white flex flex-col gap-3 text-center lg:text-left">
             <div className="">
               <p className="text-lg font-textRegular">

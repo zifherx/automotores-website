@@ -12,12 +12,12 @@ export function BannerVehicle(props: iBannerVehicleProps) {
   const params = useParams();
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <div className="flex justify-between items-center">
-        <div className="w-[160px] lg:w-[250px] p-0 lg:p-6">
-          <div className="text-3xl lg:text-5xl uppercase font-headMedium text-left">
-            <p>{marca}</p>
-            <p>{modelo}</p>
+        <div className="w-[160px] lg:w-[280px] p-0 lg:p-6">
+          <div className="uppercase text-left">
+            <p className="text-2xl lg:text-4xl font-headRegular">{marca}</p>
+            <p className="text-3xl lg:text-5xl font-headMedium">{modelo}</p>
           </div>
           <div className="mt-5 flex flex-col gap-y-3">
             <Button

@@ -25,7 +25,7 @@ export function SectionColor(props: iSectionColorProps) {
     <div className="max-w-6xl mx-auto">
       <div className="py-10 px-2 md:px-10">
         <TitleSection
-          title="Selecciona tu color"
+          title="Elige el color que va contigo"
           classname="font-headRegular md:uppercase text-3xl md:text-4xl text-center"
         />
         <div className="mt-10">

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Send } from "lucide-react";
+import { Loader2, Send, Sparkles } from "lucide-react";
 import axios from "axios";
 
 import {
@@ -32,12 +32,19 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { formCotizacionSchema } from "./FormCotizacion.form";
 import { listDepartamentos } from "@/data/listLocales";
 import { iFormCotizacionProps } from "./FormCotizacion.prop";
+import { useRouter } from "next/navigation";
 
 export function FormCotizacion(props: iFormCotizacionProps) {
   const { myCar } = props;
 
   const [departamento, setDepartamento] = useState<any>("");
   const [concesionario, setConcesionario] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingAnimation, setLoadingAnimation] = useState<
+    "default" | "sparkles" | "pulse"
+  >("sparkles");
+
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formCotizacionSchema>>({
     resolver: zodResolver(formCotizacionSchema),
@@ -56,6 +63,7 @@ export function FormCotizacion(props: iFormCotizacionProps) {
   });
 
   const onSubmit = async (values: z.infer<typeof formCotizacionSchema>) => {
+    setIsLoading(true);
     try {
       // console.log(values);
       const query = await axios.post("api/send", {
@@ -68,13 +76,30 @@ export function FormCotizacion(props: iFormCotizacionProps) {
           "https://baic.pe/wp-content/uploads/2017/09/modelo-new-x35-cotizar.png",
         priceCar: myCar?.precioBase,
       });
-      console.log(query);
+
+      if (query.status === 200) {
+        router.push(`/gracias/${query.data.id}`);
+        setIsLoading(false);
+      }
     } catch (err) {
       console.log(err);
     }
   };
 
-  const { isLoading, isValid } = form.formState;
+  const { isValid } = form.formState;
+
+  const LoadingIcon = () => {
+    switch (loadingAnimation) {
+      case "sparkles":
+        return <Sparkles className="mr-2 h-4 w-4 animate-spin" />;
+      case "pulse":
+        return (
+          <div className="mr-2 h-4 w-4 rounded-full bg-white animate-pulse" />
+        );
+      default:
+        return <Loader2 className="mr-2 h-4 w-4 animate-spin" />;
+    }
+  };
 
   return (
     <div className="p-4 my-10 md:my-0 md:p-10 border rounded-xl md:border-none md:rounded-none">
@@ -382,10 +407,19 @@ export function FormCotizacion(props: iFormCotizacionProps) {
           <Button
             type="submit"
             className="w-full font-headMedium text-xl uppercase bg-black hover:bg-grisDarkInka"
-            disabled={!isValid}
+            // disabled={!isValid}
           >
-            Enviar
-            <Send className="w-5 h-5 ml-2" />
+            {isLoading ? (
+              <>
+                <LoadingIcon />
+                Enviando...
+              </>
+            ) : (
+              <>
+                Enviar
+                <Send className="w-5 h-5 ml-2" />
+              </>
+            )}
           </Button>
         </form>
       </Form>

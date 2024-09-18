@@ -10,9 +10,9 @@ export async function POST(req: Request) {
   try {
     const { data, error } = await resend.emails.send({
       // from: `Acme <onboarding@resend.dev>`,
-      from: `Bot <frojasq@ziphonex.com>`,
-      to: [`${dataForm.email}`],
-      subject: `Nueva Cotización`,
+      from: `Bot 🤖 <bot@ziphonex.com>`,
+      to: [`automotores.inka@ziphonex.com`, `${dataForm.email}`],
+      subject: `Nueva Cotización ✅`,
       react: EmailTemplate({
         fullname: dataForm.nombres,
         tipoDocumento: dataForm.tipo_documento,

@@ -63,8 +63,9 @@ export function CardProduct(props: iCardProduct) {
         </div>
 
         <p className="mt-5 font-medium">Desde</p>
-        <p className="text-center text-black text-lg font-bold mt-3">
-          {formatUSDPrice(precio)} | {formatPENPrice(precio * tc)}
+        <p className="text-center text-black text-2xl font-bold mt-3">
+          {formatUSDPrice(precio)} &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+          {formatPENPrice(precio * tc)}
         </p>
 
         <Button

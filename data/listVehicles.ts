@@ -1389,4 +1389,199 @@ export const listModelos: iModelCar[] = [
     isGLP: false,
     isActive: true,
   },
+  // MAZDA
+  {
+    id: 2,
+    name: "Mazda 3 Sedan",
+    imageBase: "mazda/mazda3-sedan.png",
+    marca: {
+      id: 1,
+      name: "Mazda",
+      imageUrl: "Mazda_logo.png",
+      portadaUrl: "banner-mazda.jpg",
+    },
+    carroceria: {
+      id: 1,
+      name: "Sedan",
+    },
+    versiones: [
+      {
+        id: 1,
+        codVersion: "mazda3-mt-prime",
+        version: "Mazda 3 MT 2.0 Prime",
+        precio: 22490,
+        imageUrl: "mazda/mazda3-sedan.png",
+      },
+      {
+        id: 2,
+        codVersion: "mazda3-mt-core",
+        version: "Mazda 3 MT 2.0 Core",
+        precio: 24490,
+        imageUrl: "mazda/mazda3-sedan.png",
+      },
+      {
+        id: 2,
+        codVersion: "mazda3-at-core",
+        version: "Mazda 3 AT 2.0 Core",
+        precio: 27990,
+        imageUrl: "mazda/mazda3-sedan.png",
+      },
+    ],
+    colores: [
+      {
+        id: 1,
+        label: "Red Soul Cristal",
+        hex: "#982525",
+        carColor: "mazda3-sedan-rojo.png",
+        isActive: true,
+      },
+      {
+        id: 2,
+        label: "Blanco Perla",
+        hex: "#F7F7F7",
+        carColor: "mazda3-sedan-blanco.png",
+        isActive: true,
+      },
+      {
+        id: 3,
+        label: "Gray Machine",
+        hex: "#4F535B",
+        carColor: "mazda3-sedan-gray.png",
+        isActive: true,
+      },
+      {
+        id: 4,
+        label: "Azul Oscuro Metalizado",
+        hex: "#273754",
+        carColor: "mazda3-sedan-azul.png",
+        isActive: true,
+      },
+      {
+        id: 5,
+        label: "Gris Titanio",
+        hex: "#646054",
+        carColor: "mazda3-sedan-gris.png",
+        isActive: true,
+      },
+    ],
+    precioBase: 22490,
+    features: {
+      features1: [
+        {
+          superTitle: "Motor DOHC",
+          mainTitle: "2.0L",
+          subTitle: "SKYACTIV",
+        },
+        {
+          superTitle: "Potencia máxima (HP/RPM)",
+          mainTitle: "153HP",
+          subTitle: "6,000 rpm",
+        },
+        {
+          superTitle: "Transmisión",
+          mainTitle: "MT/AT",
+          subTitle: "",
+        },
+        {
+          superTitle: "Tracción",
+          mainTitle: "4x2",
+          subTitle: "",
+        },
+      ],
+      features2: [
+        {
+          superTitle: "Número de airbags",
+          mainTitle: "7",
+          subTitle: "",
+        },
+        {
+          superTitle: "Capacidad Maletero",
+          mainTitle: "444 Lts",
+          subTitle: "",
+        },
+        {
+          superTitle: "Diseño",
+          mainTitle: "Kodo",
+          subTitle: "",
+        },
+        {
+          superTitle: "Garantía",
+          mainTitle: "3 años",
+          subTitle: "100,000 km",
+        },
+      ],
+    },
+    ficha_tecnica:
+      "https://derco-pe-prod.s3.amazonaws.com/images/models/2022-05-17-Ficha%20Tecnica%20All-New%20Mazda3%20Sedan.pdf",
+    gallery: [
+      {
+        id: 4,
+        name: "mazda3-sedan-4",
+        imageUrl: "IMG-4.jpg",
+      },
+      {
+        id: 2,
+        name: "mazda3-sedan-2",
+        imageUrl: "IMG-2.jpeg",
+      },
+      {
+        id: 3,
+        name: "mazda3-sedan-3",
+        imageUrl: "IMG-3.jpg",
+      },
+      {
+        id: 1,
+        name: "mazda3-sedan-1",
+        imageUrl: "IMG-1.jpg",
+      },
+      {
+        id: 5,
+        name: "mazda3-sedan-5",
+        imageUrl: "IMG-5.jpg",
+      },
+      {
+        id: 6,
+        name: "mazda3-sedan-6",
+        imageUrl: "IMG-6.jpg",
+      },
+      {
+        id: 8,
+        name: "mazda3-sedan-8",
+        imageUrl: "IMG-8.jpg",
+      },
+      {
+        id: 9,
+        name: "mazda3-sedan-9",
+        imageUrl: "IMG-9.jpg",
+      },
+      {
+        id: 10,
+        name: "mazda3-sedan-10",
+        imageUrl: "IMG-10.jpg",
+      },
+      {
+        id: 11,
+        name: "mazda3-sedan-11",
+        imageUrl: "IMG-11.jpg",
+      },
+      {
+        id: 12,
+        name: "mazda3-sedan-12",
+        imageUrl: "IMG-12.jpg",
+      },
+      {
+        id: 13,
+        name: "mazda3-sedan-13",
+        imageUrl: "IMG-13.jpg",
+      },
+      {
+        id: 14,
+        name: "mazda3-sedan-14",
+        imageUrl: "IMG-14.jpg",
+      },
+    ],
+    isEntrega48H: false,
+    isGLP: false,
+    isActive: true,
+  },
 ];

@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import { MenuDesktop } from "../MenuDesktop";
 import { MenuMobile } from "../MenuMobile";
+import Link from "next/link";
+import { Send } from "lucide-react";
 
 export function Navbar() {
   const router = useRouter();
@@ -30,7 +32,15 @@ export function Navbar() {
           <MenuMobile />
         </div>
 
-        <div className="hidden sm:flex items-center justify-between gap-2 sm:gap-5"></div>
+        <div className="hidden sm:flex items-center justify-between gap-2 sm:gap-5">
+          <Link
+            href="#"
+            className="flex items-center gap-3 rounded-md px-4 py-2 bg-black text-white hover:bg-white hover:text-black hover:border-2 hover:border-black"
+          >
+            Cotiza aquí
+            <Send className="w-5 h-5" strokeWidth={2} />
+          </Link>
+        </div>
       </div>
     </nav>
   );

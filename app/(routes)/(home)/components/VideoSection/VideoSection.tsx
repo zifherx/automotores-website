@@ -2,7 +2,7 @@ import { VideosYoutube } from "@/components/VideosYoutube/VideosYoutube";
 
 export function VideoSection() {
   return (
-    <div className="bg-black w-full mt-10">
+    <div className="bg-black w-full">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[60%,1fr] text-white px-4 py-8 md:px-0 md:py-10">
         <div className="p-0">
           <VideosYoutube

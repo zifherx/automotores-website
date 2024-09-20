@@ -1,4 +1,5 @@
 import { AsesoriaSection } from "./components/AsesoriaSection";
+import { CallToAction } from "./components/CallToAction";
 import { CarouselMarcas } from "./components/CarouselMarcas";
 import { CarouselPortada } from "./components/CarouselPortada";
 import { CarouselServicios } from "./components/CarouselServicios";
@@ -13,9 +14,11 @@ export default function HomePage() {
       <CarouselPortada />
       <CarouselMarcas />
       <MasBuscados />
+      <CallToAction imageSource="geely-action1.jpeg" />
       <VideoSection />
       <CarouselServicios />
-      <AsesoriaSection />
+      <CallToAction imageSource="geely-action2.jpeg" />
+      {/* <AsesoriaSection /> */}
     </>
   );
 }

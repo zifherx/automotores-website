@@ -42,10 +42,10 @@ export function FeaturesVehicle(props: iFeaturesVehicleProps) {
             </div>
           </TabsContent>
           <TabsContent value="features2">
-            <p className="text-center text-4xl font-headRegular text-grisDarkInka mb-10">
+            <p className="text-center text-3xl md:text-4xl font-headRegular text-grisDarkInka mb-10">
               Especificaciones
             </p>
-            <div className=" grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-4 gap-1 md:gap-8 items-center">
               {features2.map((item, index) => (
                 <div
                   key={index}
@@ -54,11 +54,15 @@ export function FeaturesVehicle(props: iFeaturesVehicleProps) {
                     index === 4 ? "border-none" : "border-r border-r-black"
                   )}
                 >
-                  <p className="text-sm font-textRegular">{item.superTitle}</p>
-                  <p className="text-5xl font-textRegular text-grisDarkInka">
+                  <p className="text-xs md:text-sm md:font-textRegular">
+                    {item.superTitle}
+                  </p>
+                  <p className="text-2xl md:text-5xl font-textRegular text-grisDarkInka">
                     {item.mainTitle}
                   </p>
-                  <p className="text-sm font-textMedium">{item.subTitle}</p>
+                  <p className="text-xs md:text-sm md:font-textMedium">
+                    {item.subTitle}
+                  </p>
                 </div>
               ))}
             </div>

@@ -11,7 +11,7 @@ export function CallToAction(props: iCallToAction) {
       <img
         src={`/images/actions/${imageSource}`}
         alt="Cover Geely"
-        className="object-cover"
+        className="object-cover w-full"
       />
     </div>
   );
